@@ -1,0 +1,2 @@
+(self["webpackChunk_239xadmin"]=self["webpackChunk_239xadmin"]||[]).push([[443],{9498:function(n,r,u){"use strict";u.r(r),u.d(r,{default:function(){return c}});var e=u(6252);function a(n,r,u,a,t,c){return(0,e.wg)(),(0,e.j4)("h1",null,"这是首页")}var t=(0,e.aZ)({});t.render=a;var c=t}}]);
+//# sourceMappingURL=about.b8ee5387.js.map
