@@ -1,0 +1,2 @@
+(self["webpackChunk_239_X_Admin"]=self["webpackChunk_239_X_Admin"]||[]).push([[443],{9211:function(n,u,e){"use strict";e.r(u),e.d(u,{default:function(){return c}});var t=e(6252),a={class:"about"},r=(0,t.Wm)("h1",null,"This is an about page",-1);function s(n,u){return(0,t.wg)(),(0,t.j4)("div",a,[r])}const i={};i.render=s;var c=i}}]);
+//# sourceMappingURL=about.308f6142.js.map
