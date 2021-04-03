@@ -1,5 +1,5 @@
 <template>
-  <h1>这是首页</h1>
+  <h1>这是登录页</h1>
 </template>
 
 <script lang="ts">
@@ -8,3 +8,8 @@ export default defineComponent({
    
 })
 </script>
+<style lang="less" scoped>
+h1{
+    color:@primary
+}
+</style>
