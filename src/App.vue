@@ -1,23 +1,10 @@
 <template>
-  <a-button type="primary">Primary</a-button>
-  <a-button>Default</a-button>
-  <a-button type="dashed">Dashed</a-button>
-  <a-button type="danger">Danger</a-button>
-  <a-button type="primary">按钮</a-button>
-  <a-button type="link">Link</a-button>
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </div>
+  <router-view/>
 </template>
-
-<script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import HelloWorld from "./components/HelloWorld.vue";
-
-@Options({
-  components: {
-    HelloWorld,
-  },
-})
-export default class App extends Vue {}
-</script>
 
 <style>
 #app {
@@ -26,6 +13,18 @@ export default class App extends Vue {}
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
