@@ -46,7 +46,7 @@
 <script lang="ts">
 import { UserOutlined, LockOutlined } from "@ant-design/icons-vue";
 import { ValidateErrorEntity } from "ant-design-vue/es/form/interface";
-import { defineComponent, reactive, UnwrapRef } from "vue";
+import { defineComponent, reactive, UnwrapRef,getCurrentInstance}from "vue";
 interface FormState {
   user: string;
   password: string;
@@ -66,9 +66,11 @@ export default defineComponent({
     const formState: UnwrapRef<FormState> = reactive({
       user: "",
       password: "",
-    });
+    })
+    const curr:any  = getCurrentInstance()
     const handleFinish = (values: FormState) => {
       console.log(values, formState);
+      console.log('当前vue实例',curr.proxy.$router.push('/home'))
     };
     const handleFinishFailed = (errors: ValidateErrorEntity<FormState>) => {
       console.log(errors);
